@@ -1,0 +1,21 @@
+{
+  "name": "creativecodelabs/silverstripe-smtp-tester",
+  "description": "Silverstripe SMTP Tester allows developers to test their site's SMTP configuration from the admin area.",
+  "type": "silverstripe-module",
+  "keywords": [
+	"silverstripe",
+	"smtp",
+	"tester"
+  ],
+  "license": "GPL-3.0",
+  "authors": [
+	{
+	  "name": "Joe Chenevey",
+	  "email": "joe@creativecodelabsllc.com"
+	}
+  ],
+  "require": {
+	"silverstripe/framework": "3.5.*",
+	"silverstripe/cms": "3.5.*"
+  }
+}
