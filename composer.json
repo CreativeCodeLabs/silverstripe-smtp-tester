@@ -15,7 +15,7 @@
 	}
   ],
   "require": {
-	"silverstripe/framework": "3.5.*",
-	"silverstripe/cms": "3.5.*"
+	"silverstripe/framework": "^3.5",
+	"silverstripe/cms": "^3.5"
   }
 }
