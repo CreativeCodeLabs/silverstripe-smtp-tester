@@ -37,9 +37,15 @@ class SmtpTester extends LeftAndMain implements PermissionProvider {
 
             $emailParts = explode("@",$member->Email);
 
-            if (!in_array($emailParts[1],$userDomainWhitelist)) {
-                return false;
-            }
+            if (count($emailParts) == 1) {
+            	$domain = $emailParts[0];
+			} else {
+				$domain = $emailParts[1];
+			}
+
+			if (!in_array($domain,$userDomainWhitelist)) {
+				return false;
+			}
         }
 
         return Permission::check("CMS_ACCESS_SmtpTester");
